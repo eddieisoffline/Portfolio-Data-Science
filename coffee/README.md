@@ -77,6 +77,8 @@ It includes historical sales metrics, store/category comparisons, average ticket
 
 📧 Contact: 
 - [Email](mailto:eduardoan.data.expert@outlook.com)
+
+
 - [Linkedin](https://www.linkedin.com/in/eduardo-anica-gonzalez/)
 
 # Español
@@ -153,5 +155,9 @@ Incluye métricas de ventas históricas, comparación por tienda/categoría, tic
 ✍️ Autor: Eduardo Anica
 
 📧 Contacto: 
+
+
 - [Email](mailto:eduardoan.data.expert@outlook.com)
+
+
 - [Linkedin](https://www.linkedin.com/in/eduardo-anica-gonzalez/)
