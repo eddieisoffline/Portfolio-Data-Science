@@ -5,7 +5,7 @@ summary: "Dashboard interactivo para analizar ventas de una cadena de cafetería
 tools: ["Python", "Prophet", "PostgreSQL", "Supabase", "Looker Studio"]
 repo_url: "https://github.com/eddieisoffline/Portfolio-Data-Science/tree/master/coffee"
 demo_url: "https://lookerstudio.google.com/reporting/81573f48-4547-4c3a-9543-16c0e4954da9"
-cover_image: "https://github.com/eddieisoffline/Portfolio-Data-Science/blob/main/coffee/dashboard/page_1.png"
+cover_image: "https://github.com/eddieisoffline/Portfolio-Data-Science/blob/main/coffee/dashboard/page_1.png?raw=true"
 featured: true
 date: "2025-09-13"
 ---
