@@ -1,163 +1,41 @@
-# ☕ Coffee Sales Performance Dashboard
-
-# English
-This project presents an **interactive dashboard** to analyze the sales of a coffee chain in New York.  
-It includes historical sales metrics, store/category comparisons, average ticket, and sales forecasts using time series models.
-
+---
+title: "Coffee Sales Performance Dashboard"
+slug: "coffee-sales-dashboard"
+summary: "Dashboard interactivo para analizar ventas de una cadena de cafeterías en Nueva York con forecast de series temporales."
+tools: ["Python", "Prophet", "PostgreSQL", "Supabase", "Looker Studio"]
+repo_url: "https://github.com/eddieisoffline/Portfolio-Data-Science/tree/master/coffee"
+demo_url: "https://lookerstudio.google.com/reporting/81573f48-4547-4c3a-9543-16c0e4954da9"
+cover_image: "dashboard/page_1.png"
+featured: true
+date: "2025-09-13"
 ---
 
-## 📌 Key Features
+## Problema
 
-### Page 1 – **Performance Overview**
-- **Executive KPIs**:
-  - Total sales vs previous month (with % variation).
-  - Average ticket.
-  - Total tickets (transactions).
-- **Geographic & Product Breakdown**:
-  - Sales by store (map view).
-  - Top 5 categories by sales.
-- **Trends**:
-  - Real Sales vs Forecast (Prophet model).
-  - Average ticket evolution.
+### Español
 
-### Page 2 – **Analytics & Forecast Accuracy**
-- **Accuracy**: MAPE (Mean Absolute Percentage Error) global and by store.
-- **Products**:
-  - Sales by product detail (Treemap).
-  - Average ticket distribution (histogram).
-- **Transactional Detail**:
-  - Table with date, store, product, price, and total.
-  - Useful for exploration and export to Excel/CSV.
+Una cadena de cafeterías en Nueva York necesitaba una forma clara de monitorear su desempeño comercial, comparar resultados entre tiendas y categorías, y anticipar ventas futuras a partir de datos históricos. La información transaccional existía, pero requería limpieza, modelado y visualización para convertirse en indicadores accionables.
 
----
+### English
 
-## 🛠️ Technologies Used
-- **Python**: cleaning, aggregation, and time series modeling (**Prophet**).
-- **PostgreSQL (Supabase)**: storage and creation of *views* to join real sales and predictions.
-- **Looker Studio**: building the interactive dashboard.
+A coffee chain in New York needed a clear way to monitor business performance, compare results across stores and categories, and anticipate future sales from historical data. Transactional data was available, but it required cleaning, modeling, and visualization to become actionable indicators.
 
----
+## Metodología
 
-## 🚀 Key Results
-- Clear visualization of **current performance** and **future sales forecast**.
-- Store comparison (Astoria, Hell’s Kitchen, Lower Manhattan).
-- Accuracy metrics (MAPE) to evaluate model quality.
-- Insights on customer behavior through average ticket and product detail.
+### Español
 
----
+Se procesaron datos transaccionales de ventas con Python para limpiar, agregar y preparar métricas clave como ventas totales, ticket promedio y número de tickets. Después, se construyeron modelos de series temporales con Prophet para generar forecasts de ventas y se almacenaron los resultados en PostgreSQL mediante Supabase, creando vistas para unir ventas reales y predicciones. Finalmente, se diseñó un dashboard interactivo en Looker Studio con vistas ejecutivas, comparativos por tienda, análisis de productos y métricas de precisión como MAPE.
 
-## 📂 Repository Structure
-```text
-├── data/               # Input data (transactional sales, forecasts)
-├── notebooks/          # Python modeling (Prophet, ARIMA, metrics)
-├── sql/                # Queries and PostgreSQL views
-├── dashboard/          # Dashboard screenshots and resources
-└── README.md           # This file
-```
----
+### English
 
-## Dashboard
-[View Dashboard in Looker Studio](https://lookerstudio.google.com/reporting/81573f48-4547-4c3a-9543-16c0e4954da9)
-### Screenshots
-### Page 1 – Performance Overview
-[![Dashboard Overview](dashboard/page_1.png)](https://lookerstudio.google.com/reporting/81573f48-4547-4c3a-9543-16c0e4954da9)
+Transactional sales data was processed with Python to clean, aggregate, and prepare key metrics such as total sales, average ticket, and ticket count. Time series models were then built with Prophet to generate sales forecasts, and the results were stored in PostgreSQL through Supabase, using views to combine actual sales and predictions. Finally, an interactive Looker Studio dashboard was designed with executive views, store comparisons, product analysis, and accuracy metrics such as MAPE.
 
-### Page 2 – Analytics & Forecast Accuracy
-[![Dashboard Analytics](dashboard/page_2.png)](https://lookerstudio.google.com/reporting/81573f48-4547-4c3a-9543-16c0e4954da9)
+## Resultados
 
-</br>
+### Español
 
-</br>
+El proyecto entrega una visualización clara del desempeño actual y del forecast futuro de ventas, permitiendo comparar tiendas como Astoria, Hell's Kitchen y Lower Manhattan. El dashboard facilita la lectura de tendencias, la evaluación de precisión del modelo y el análisis del comportamiento de clientes mediante ticket promedio, detalle de productos y tablas exportables.
 
-</br>
-</br>
-</br>
+### English
 
-✍️ Author: Eduardo Anica
-
-📧 Contact: 
-- [Email](mailto:eduardoan.data.expert@outlook.com)
-
-
-- [Linkedin](https://www.linkedin.com/in/eduardo-anica-gonzalez/)
-
-# Español
-Este proyecto muestra un **dashboard interactivo** para analizar ventas de una cadena de cafeterías en Nueva York.  
-Incluye métricas de ventas históricas, comparación por tienda/categoría, ticket promedio y proyecciones de ventas usando modelos de series temporales.
-
-
-## 📌 Características principales
-
-### Página 1 – **Performance Overview**
-- **KPIs ejecutivos**:
-  - Ventas totales vs mes anterior (con % de variación).
-  - Ticket promedio.
-  - Tickets (transacciones) totales.
-- **Desglose geográfico y de productos**:
-  - Ventas por tienda (mapa de ubicaciones).
-  - Top 5 categorías por ventas.
-- **Tendencias**:
-  - Ventas reales vs Forecast (modelo Prophet).
-  - Evolución del ticket promedio.
-
-### Página 2 – **Analytics & Forecast Accuracy**
-- **Accuracy**: MAPE (Error porcentual medio) global y por tienda.
-- **Productos**:
-  - Ventas por detalle de producto (Treemap).
-  - Distribución del ticket promedio (histograma).
-- **Detalle transaccional**:
-  - Tabla con fecha, tienda, producto, precio y total.
-  - Útil para exploración y exportación a Excel/CSV.
-
----
-
-## 🛠️ Tecnologías utilizadas
-- **Python**: limpieza, agregación y modelado de series temporales (**Prophet**).
-- **PostgreSQL (Supabase)**: almacenamiento y creación de *views* para unir ventas reales y predicciones.
-- **Looker Studio**: construcción del dashboard interactivo.
-
-
----
-
-## 🚀 Resultados clave
-- Visualización clara de la **performance actual** y el **forecast futuro** de ventas.
-- Comparación entre tiendas (Astoria, Hell’s Kitchen, Lower Manhattan).
-- Métricas de precisión (MAPE) para evaluar la calidad de los modelos.
-- Insights sobre comportamiento de clientes a través de ticket promedio y detalle de productos.
-
----
-
-## 📂 Estructura del repositorio
-```text
-├── data/               # Datos de entrada (ventas transaccionales, forecasts)
-├── notebooks/          # Modelado en Python (Prophet, ARIMA, métricas)
-├── sql/                # Queries y vistas en PostgreSQL
-├── dashboard/          # Capturas y recursos del dashboard
-└── README.md           # Este archivo
-```
-
-## Dashboard
-[Ver Dashboard en Looker Studio](https://lookerstudio.google.com/reporting/81573f48-4547-4c3a-9543-16c0e4954da9)
-### Capturas de Pantalla
-### Pagina 1 – Vista de Resumen de rendimiento
-[![Vista de Resumen de rendimiento](dashboard/page_1.png)](https://lookerstudio.google.com/reporting/81573f48-4547-4c3a-9543-16c0e4954da9)
-
-### Page 2 – Análisis y Precisión del modelo.
-[![Análisis y Precisión del modelo.](dashboard/page_2.png)](https://lookerstudio.google.com/reporting/81573f48-4547-4c3a-9543-16c0e4954da9)
-</br>
-
-</br>
-
-</br>
-</br>
-</br>
-
-✍️ Autor: Eduardo Anica
-
-📧 Contacto: 
-
-
-- [Email](mailto:eduardoan.data.expert@outlook.com)
-
-
-- [Linkedin](https://www.linkedin.com/in/eduardo-anica-gonzalez/)
+The project delivers a clear visualization of current performance and future sales forecasts, enabling comparisons between stores such as Astoria, Hell's Kitchen, and Lower Manhattan. The dashboard makes it easier to read trends, evaluate model accuracy, and analyze customer behavior through average ticket, product detail, and exportable tables.
