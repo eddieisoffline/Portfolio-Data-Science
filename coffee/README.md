@@ -1,7 +1,11 @@
 ---
-title: "Coffee Sales Performance Dashboard"
+title:
+  es: "Dashboard de rendimiento de ventas de café"
+  en: "Coffee Sales Performance Dashboard"
 slug: "coffee-sales-dashboard"
-summary: "Dashboard interactivo para analizar ventas de una cadena de cafeterías en Nueva York con forecast de series temporales."
+summary:
+  es: "Dashboard interactivo para analizar ventas de una cadena de cafeterías en Nueva York con forecast de series temporales."
+  en: "Interactive dashboard for analyzing sales from a coffee shop chain in New York with time-series forecasting."
 tools: ["Python", "Prophet", "PostgreSQL", "Supabase", "Looker Studio"]
 repo_url: "https://github.com/eddieisoffline/Portfolio-Data-Science/tree/master/coffee"
 demo_url: "https://lookerstudio.google.com/reporting/81573f48-4547-4c3a-9543-16c0e4954da9"
